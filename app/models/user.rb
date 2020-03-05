@@ -10,4 +10,6 @@ class User < ApplicationRecord
                                        format: { with: VALIDE_EMAIL_REGEX },
                                        uniqueness: { case_sensitive: true }
 
+
+    has_many :contacts
 end
